@@ -7,14 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ."
   },
-  "files": [
-    "/src/*"
-  ],
   "author": "IBM",
   "dependencies": {
      "base-app": "git+https://github.com/spvibm/spv-base-app.git",
-     "base-app": "git+https://github.com/spvibm/spv-rest-extension.git",
-      "config": "^3.3.1"
+    "config": "^3.3.1"
   },
   "publishConfig": {
     "registry": "https://artifactory.gscorp.ad/artifactory/api/npm/spv-common-npm-virtual"
@@ -29,12 +25,6 @@
     "nyc": "^15.1.0",
     "rewire": "^5.0.0"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm run test",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "repository": {
     "type": "git",
     "url": ""
@@ -43,4 +33,3 @@
     "node": "8.11.1"
   }
 }
-

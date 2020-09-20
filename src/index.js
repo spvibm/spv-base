@@ -1,5 +1,7 @@
-const baseApp = require('base-app');
+"use strict";
 
-const app = new baseApp();
+const path      = require('path');
 
-app.start();
+module.exports  = {
+    dirname: path.join(__dirname, 'template'),
+};
